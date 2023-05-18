@@ -1,0 +1,34 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navigation-link {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: #1F53C4;
+}
+
+.button {
+    font-family: 'Bebas Neue', sans-serif;
+    border: none;
+    font-size: 20px;
+    box-shadow: 1px 3px 5px 0px #00000040;
+}
+
+.cta-button {
+    background-color: #D13F21;
+    color: white;
+    padding: 8px 15px 8px 15px;
+}
+
+.info-button {
+    background-color: #1F53C4;
+    color: white;
+    padding: 8px 15px 8px 15px;
+}
+
+.footer {
+    padding-bottom: 5vw;
+}

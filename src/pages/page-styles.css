@@ -1,0 +1,39 @@
+.container {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-title {
+    font-family: 'Yellowtail', serif;
+    font-size: 61.04px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.hero-subtitle {
+    margin-bottom: 0;
+}
+
+.blue-text {
+    color: #1F53C4 !important;
+}
+
+.item-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.body-text {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: white;
+}
+
+.info-container {
+    background-color:#BB877C;
+}
