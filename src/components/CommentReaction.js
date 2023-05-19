@@ -1,8 +1,10 @@
+import classNames from "classnames";
+
 const CommentReaction = (props) => {
     return (
         <div>
-            <span onClick={props.onClick}>{props.addbutton ? '+' : (props.reaction)}</span>
-            <span>{props.count}</span>
+            <span className='comment-reaction'>{props.reaction}</span>
+            <span className="reaction-count">{props.count}</span>
         </div>
     );
 }

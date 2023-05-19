@@ -36,7 +36,7 @@ const Petition = () => {
 
     return (
         <div>
-            <div className="container petition-containet">
+            <div className="container petition-container">
                 <h1 className="item-title blue-text page-title">Allekirjoita vetoomus</h1>
                 <p className="body-text blue-text">Allekirjoita vetoomus opiskelijoiden hyvinvoinnin puolesta! Turvataan yhdessä jokaiselle opiskelijalle Oikeus opiskella.</p>
                 <Form currentState={commentState} commentHook={setComments}/>

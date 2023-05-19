@@ -3,8 +3,6 @@ import CommentReaction from "./CommentReaction";
 import ReactionPicker from "./ReactionPicker";
 
 const Comment = (props) => {
-
-    const [pickerVisibility, setVisibility] = useState(false);
     
     const [reactions, setReactions] = useState(props.reactions);
 
@@ -28,7 +26,7 @@ const Comment = (props) => {
 
     return ( 
         <div className="comment">
-            <span className="item-title">{props.name}</span>
+            <span className="item-title comment-name">{props.name}</span>
             <div className="comment-body">
                 <p className="body-text">{props.text}</p>
                 <div className="comment-reactions">
@@ -44,8 +42,8 @@ const Comment = (props) => {
                     }
 
                     {/* Create ReactionPicker and button to add reactions */}
-                    <CommentReaction addbutton={true} onClick={() => {setVisibility(!pickerVisibility)}}/>
-                    <ReactionPicker visible={pickerVisibility} setVisibility={setVisibility} commentReactions={reactions} setReactions={setReactions}/>
+                    <div className="break"></div>
+                    <ReactionPicker commentReactions={reactions} setReactions={setReactions}/>
                 </div>
             </div>
         </div>

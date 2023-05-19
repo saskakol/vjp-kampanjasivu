@@ -8,9 +8,9 @@ const Home = () => {
     return (
         <div>
             <div className="container hero-container">
-                <span className="hero-subtitle item-title blue-text">Turvataan opiskelijoille</span>
+                <span className="hero-subtitle item-title blue-text">Turvataan opiskelijoiden</span>
                 <h1 className="hero-title blue-text">Oikeus <br />opiskella</h1>
-                <Button type="cta-button" text="Allekirjoita vetoomus" />
+                <Button type="cta-button" text="Allekirjoita vetoomus" onClick={() => {navigate('/vetoomus'); window.scrollTo(0, 0);}}/>
             </div>
 
             <div className='container info-container'>
@@ -20,7 +20,7 @@ const Home = () => {
                 <span className='item-title'>Katso video</span>
                 <span className='body-text'>Rafaelin kokemuksista</span>
 
-                <video controls className='video-player'>
+                <video controls className='video-player' poster='poster.jpg'>
                     <source src="https://users.aalto.fi/~kolehms10/vjp_videotuotanto_final.mp4" type="video/mp4" />
                 </video>
                 <Button onClick={() => {navigate('/tavoitteet'); window.scrollTo(0, 0);}} type="info-button" text="Lue tavoitteistamme"/>
