@@ -1,25 +1,29 @@
 import Button from '../components/Button'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className="container hero-container">
-                <h2 className="hero-subtitle item-title blue-text">Turvataan opiskelijoille</h2>
+                <span className="hero-subtitle item-title blue-text">Turvataan opiskelijoille</span>
                 <h1 className="hero-title blue-text">Oikeus <br />opiskella</h1>
                 <Button type="cta-button" text="Allekirjoita vetoomus" />
             </div>
 
             <div className='container info-container'>
-                <h3 className='item-title'>Opiskelijoiden mielenterveystilanne on kriittinen.</h3>
-                <p className='body-text'>Siksi on aika tehdä reformeja opiskelijoiden tuen uudistamiseksi.</p>
+                <h2 className='item-title'>Opiskelijoiden tuen tilanne on kriittinen.</h2>
+                <p className='body-text'>Opiskelijat kohtaavat päivittäin puutteellisia mielenterveyspalveluita, riittämätöntä taloudellista tukea ja liian vähäistä opinto-ohjausta. Siksi on aika tehdä reformeja opiskelijoiden tuen uudistamiseksi.</p>
 
-                <h3 className='item-title'>Katso video</h3>
-                <p className='body-text'>Rafaelin kokemuksista</p>
+                <span className='item-title'>Katso video</span>
+                <span className='body-text'>Rafaelin kokemuksista</span>
 
-                <video width="480" height="270" controls>
+                <video controls className='video-player'>
                     <source src="https://users.aalto.fi/~kolehms10/vjp_videotuotanto_final.mp4" type="video/mp4" />
                 </video>
-                <Button type="info-button" text="Lue tavoitteistamme"/>
+                <Button onClick={() => {navigate('/tavoitteet'); window.scrollTo(0, 0);}} type="info-button" text="Lue tavoitteistamme"/>
             </div>
         </div>
     );

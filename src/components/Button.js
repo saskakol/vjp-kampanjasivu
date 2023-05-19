@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 const Button = (props) => {
     return (
-        <button className={classNames('button', props.type)}>{props.text}</button>
+        <button className={classNames('button', props.type)} onClick={props.onClick}>{props.text}</button>
     );
 };
 

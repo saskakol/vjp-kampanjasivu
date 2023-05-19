@@ -1,10 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 
 const Campaign = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div>
-            <div className="container">
-                <h2 className="item-title blue-text">Tavoitteemme</h2>
+            <div className="container campaign-container">
+                <h1 className="item-title page-title blue-text">Tavoitteemme</h1>
                 <p className="body-text blue-text">Opiskelijat joutuvat kantamaan raskasta opiskelutaakkaa, kärsivät mielenterveysongelmista, kohtaavat taloudellisia vaikeuksia ja saavat puutteellista tukea. Tähän on saatava muutos. "Oikeus opiskella" -kampanja on syntynyt vastauksena opiskelijoiden kriittiseen tilanteeseen. </p>
             </div>
 
@@ -28,7 +32,7 @@ const Campaign = () => {
                     <li className="body-text">Luodaan mentorointiohjelmia, joissa opiskelijat saavat tukea ja ohjausta kokeneilta opiskelijoilta tai ammattilaisilta omien tavoitteidensa saavuttamiseksi.</li>
                 </ul>
 
-                <Button type="cta-button" text="Allekirjoita vetoomus" />
+                <Button type="cta-button" text="Allekirjoita vetoomus" onClick={() => {navigate('/vetoomus'); window.scrollTo(0, 0);}}/>
             </div>
         </div>
     );

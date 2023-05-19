@@ -1,3 +1,16 @@
+body {
+    padding: 0;
+    margin: 3vw 0 0 0;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0vw;
+    padding: 1vw 0 1vw 0;
+    background-color: white;
+}
+
 .container {
     padding-left: 15vw;
     padding-right: 15vw;
@@ -8,13 +21,14 @@
 
 .hero-title {
     font-family: 'Yellowtail', serif;
-    font-size: 61.04px;
+    font-size: 76.29px;
     font-weight: 400;
     line-height: 1;
     margin-top: 10px;
 }
 
 .hero-subtitle {
+    font-size: 25px;
     margin-bottom: 0;
 }
 
@@ -26,6 +40,12 @@
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
     color: white;
+    font-size: 25px;
+    margin: 1vw 0 0 0;
+}
+
+.page-title {
+    font-size: 31.25px;
 }
 
 .body-text {
@@ -36,4 +56,44 @@
 
 .info-container {
     background-color:#BB877C;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.hero-container {
+    margin-top: 5vw;;
+    margin-bottom: 5vw;
+}
+
+.campaign-container {
+    margin: 5vw 0 5vw 0;
+}
+
+.petition-container {
+    margin-top: 5vw;;
+    margin-bottom: 5vw;
+}
+
+.video-player {
+    width: 70%;
+    margin: 1vw 0 1vw 0;
+}
+
+@media screen and (max-width: 680px) {
+
+    .hero-container {
+        margin-top: 40vw;
+        margin-bottom: 55vw;
+    }
+
+    .info-container {
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+
+    .video-player {
+        width: 100%;
+        margin: 5vw 0 5vw 0;
+    }
+
 }
