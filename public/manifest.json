@@ -1,7 +1,8 @@
 {
   "short_name": "Oikeus opiskella",
   "name": "Oikeus opiskella - kampanja opiskelijoiden oikeuksien puolesta",
-  "start_url": ".",
+  "icons": [],
+  "start_url": "./vjp-kampanjasivu",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
